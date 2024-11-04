@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  --dark--bgCol: #130020;
+  --bgCol: #350058;
+  --bright--bgCol: #9100f1;
+  --fontCol: #d4d4d4;
+  --p: 20px;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  background: #333;
+}
+
+.App{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--fontCol);
+  background: var(--dark--bgCol);
+  max-width: 350px;
+  padding: 2em 1em;
+  border-radius: var(--p);
+}
+
+.flexDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.genPassDiv{
+  background: var(--bright--bgCol);
+  border-radius: 16px;
+  padding-right: 0.5em;
+}
+
+input, button{
+  accent-color: var(--bright--bgCol);
+  filter: brightness(1.2)
+}
+
+input{
+  color: var(--fontCol);
+}
+
+.ant-switch-checked:hover, .ant-switch-checked {
+  background-color: var(--bright--bgCol) !important; /* A lighter custom color */
+}
+
+.actionButton{
+  margin-top:1em;
+  background-color: var(--bright--bgCol);
+  color: var(--fontCol);
+  font-size: 1.2em;
+  border: none;
+  border-radius:16px;
+  width:100%;
+  padding: 1em;
+  animation-duration: 2s;
+}
+
+.actionButton:hover{
+  filter: brightness(1.3);
+}
+
+.compDiv{
+  margin-top: 10px;
+  background: var(--bgCol);
+  padding: 1em;
+  border-radius: 16px;
+}
+
+.passText{
+  background: none;
+  border:none;
+  padding: 0.5em;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.passText::placeholder{
+  color: var(--fontCol);
+}
+
+.gap16{
+  gap:2em;
+}
+
+svg:hover{
+  color:var(--dark--bgCol);
+}
